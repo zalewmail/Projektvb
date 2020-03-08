@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
         Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SplitContainer1.Panel2.SuspendLayout()
         Me.SplitContainer1.SuspendLayout()
@@ -37,6 +38,7 @@ Partial Class Form1
         '
         'SplitContainer1.Panel2
         '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.Button1)
         Me.SplitContainer1.Panel2.Controls.Add(Me.DateTimePicker1)
         Me.SplitContainer1.Size = New System.Drawing.Size(800, 450)
         Me.SplitContainer1.SplitterDistance = 243
@@ -48,6 +50,15 @@ Partial Class Form1
         Me.DateTimePicker1.Name = "DateTimePicker1"
         Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
         Me.DateTimePicker1.TabIndex = 2
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(107, 236)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -66,4 +77,5 @@ Partial Class Form1
 
     Friend WithEvents SplitContainer1 As SplitContainer
     Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents Button1 As Button
 End Class
