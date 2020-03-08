@@ -22,10 +22,48 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        Me.SplitContainer1 = New System.Windows.Forms.SplitContainer()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SplitContainer1.Panel2.SuspendLayout()
+        Me.SplitContainer1.SuspendLayout()
+        Me.SuspendLayout()
+        '
+        'SplitContainer1
+        '
+        Me.SplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.SplitContainer1.Location = New System.Drawing.Point(0, 0)
+        Me.SplitContainer1.Name = "SplitContainer1"
+        '
+        'SplitContainer1.Panel2
+        '
+        Me.SplitContainer1.Panel2.Controls.Add(Me.DateTimePicker1)
+        Me.SplitContainer1.Size = New System.Drawing.Size(800, 450)
+        Me.SplitContainer1.SplitterDistance = 243
+        Me.SplitContainer1.TabIndex = 0
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.Location = New System.Drawing.Point(338, 116)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 2
+        '
+        'Form1
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.SplitContainer1)
+        Me.Name = "Form1"
         Me.Text = "Form1"
+        Me.SplitContainer1.Panel2.ResumeLayout(False)
+        CType(Me.SplitContainer1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.SplitContainer1.ResumeLayout(False)
+        Me.ResumeLayout(False)
+
     End Sub
 
+    Friend WithEvents SplitContainer1 As SplitContainer
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class
